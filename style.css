@@ -1,0 +1,308 @@
+/* --------------GLOBAL STYLE----------------  */
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.container {
+  width: 1125px;
+  margin: auto;
+}
+
+header {
+  background-color: #f8edf0;
+  height: 862px;
+}
+
+.btn {
+  border: none;
+  background-color: #d23166;
+  padding: 14px 50px;
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.08px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #d23166;
+  background-color: #fafafa;
+  color: #d23166;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+/* -----------NAV BAR------------  */
+
+.nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 79px;
+  padding: 10px 0;
+}
+
+.nav__list ul,
+.products__list ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav__list a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  color: #150101;
+}
+
+/* -----------CTA SECTION-------------  */
+
+.cta__wrapper {
+  display: flex;
+  margin-top: 37px;
+}
+
+.cta__img {
+  width: calc(100% - 665px);
+  position: relative;
+}
+
+.cta__content {
+  width: 665px;
+  margin-top: 196px;
+}
+
+.cta__intro {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  color: #0f0101;
+  letter-spacing: 10%;
+  margin-bottom: 6px;
+}
+
+.cta__content h1 {
+  font-size: 57.33px;
+  font-weight: 400;
+  line-height: 69.08px;
+}
+
+.cta__content h1 span {
+  color: #d23166;
+}
+
+.cta__content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #0f0101;
+  margin: 35px 0 50px 0;
+}
+
+.main__img {
+  position: absolute;
+}
+
+.bg__img {
+  position: absolute;
+  z-index: 1;
+  bottom: -20%;
+  left: 55%;
+  transform: translate(-50%);
+}
+
+.cta__water {
+  position: absolute;
+  z-index: 3;
+  right: -45%;
+  bottom: -35%;
+}
+
+/* -------------------INFO CARDS SECTION --------------- */
+
+.info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 62px 0;
+}
+
+.info__cards__shipping,
+.info__cards__packaging,
+.info__cards__money-back,
+.info__cards__delivery {
+  width: calc(25% - 30px);
+  text-align: center;
+  padding: 30px;
+  box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.info__wrapper h2 {
+  margin: 25px 0 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 27.6px;
+}
+
+.info__wrapper p {
+  font-size: 14px;
+  font-family: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* ------------------ OATMEA SECTION--------------  */
+
+#oatmea {
+  background-color: rgba(248, 237, 240, 1);
+}
+.oatmea__wrapper {
+  display: flex;
+  height: 544.5px;
+  align-items: center;
+}
+
+.oatmea__content,
+.oatmea__img {
+  width: 50%;
+}
+
+.oatmea__content h3 {
+  font-size: 44.2px;
+  font-weight: 600;
+  line-height: 48.84px;
+  color: rgba(21, 1, 1, 1);
+}
+
+.oatmea__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(21, 1, 1, 1);
+  margin: 16px 0 35px 0;
+}
+
+/* ----------------PRODUCTS SECTION----------  */
+
+.products__title {
+  text-align: center;
+  font-size: 44.2px;
+  font-weight: 600;
+  line-height: 61px;
+  color: #150101;
+  margin: 64px 0;
+}
+
+.products__list a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+.products__list li::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: transparent;
+  position: relative;
+  top: 10px;
+  transition: all 0.5s;
+}
+
+.products__list li:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fa4659;
+  position: relative;
+  top: 10px;
+}
+
+.products__list ul {
+  width: max-content;
+  margin: auto;
+}
+
+.products__list {
+  margin-bottom: 50px;
+}
+
+/* --------------BREAD SECTION------------  */
+
+.bread__wrapper,
+.chocolate__wrapper,
+.corn__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 85px;
+}
+
+.bread__img,
+.chocolate__img,
+.corn__img {
+  width: 50%;
+}
+
+.bread__content,
+.chocolate__content,
+.corn__content {
+  width: calc(50% - 85px);
+}
+
+.bread__content h2,
+.chocolate__content h2,
+.corn__content h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.88px;
+  color: #000000;
+  margin-top: 80px;
+}
+
+.bread__content p,
+.chocolate__content p,
+.corn__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 10px 0 30px 0;
+}
+
+.discount__price {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35.88px;
+}
+
+.actual__price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.6px;
+  text-decoration: line-through;
+  color: #00000053;
+}
+
+.bread__btn,
+.chocolate__btn,
+.corn__btn {
+  margin-top: 20px;
+}
+
+.chocolate__content {
+  text-align: right;
+}
