@@ -21,7 +21,7 @@ header {
 }
 
 .btn {
-  border: none;
+  border: 2px solid transparent;
   background-color: #d23166;
   padding: 14px 50px;
   color: #fafafa;
@@ -74,7 +74,7 @@ header {
 }
 
 .cta__img {
-  width: calc(100% - 665px);
+  width: calc(100% - 680px);
   position: relative;
 }
 
